@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_task11/widgets/button_random.dart';
 
 void main() {
   runApp(MyApp());
@@ -29,12 +30,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Lab11"),
-          centerTitle: true,
-        )
+      appBar: AppBar(
+        title: Text("Lab11"),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            RandomButtonWidget(),
+          ],
+        ),
+      ),
     );
-
-
+  }
 }
 
